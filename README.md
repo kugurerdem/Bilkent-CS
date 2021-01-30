@@ -1,6 +1,6 @@
 # What is this?
 
-This repository 
+This repository is created for the purpose of keeping track of my Computer Science progress in Bilkent University. 
 
 # Current Standing
 
