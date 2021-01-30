@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+/**
+ * Lab05d
+ * @author __your name___
+ * @version __date__
+ */ 
+public class Lab05d
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+      
+      // Declaring variables
+      double pi;
+      
+      // 1. Output Math.PI by constant
+      System.out.println("Math.PI = " + Math.PI);
+      
+      // 2. Calculating PI by first 3 terms
+      pi = 0;
+      
+      for(int i = 0; i < 3; i++){
+          if( i % 2 == 0 ){
+              pi = pi + (double) 4/(1 + i*2);
+          } else{
+              pi = pi - (double) 4/(1 + i*2);
+          }
+      }
+      
+      System.out.println("PI calculated with 3 first terms in the series is : " + pi);
+      
+      // 3. Calculating PI with 0.01 error
+      int counter;
+      
+      pi = 0;
+      counter = 0;
+      
+      while( ! (Math.abs( Math.PI - pi ) < 0.01) ){
+          
+          if( counter % 2 == 0){
+              pi = pi + (double) 4 / (1 + counter*2);
+          } else{
+              pi = pi - (double) 4 / (1 + counter*2);
+          }
+          counter++;
+      }
+      
+      System.out.println("PI calculated with 0.1 error is : " + pi);
+   }
+
+}

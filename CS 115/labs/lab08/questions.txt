@@ -1,0 +1,9 @@
+T;Non-zero values map to False in Python?;False;5;3;
+M;What is the largest ocean in the world?;B;5;A-Indian Ocean,B-Pacific Ocean,C-Atlantic Ocean;
+R;In what year was Google launched on the web?;1998;5;
+R;In computing what is Ram short for?;Random Access Memory;5;
+M;What datatype is the following object:  L = [1, 23, 'hello', 1]?;A;5;A - List,B-Dictionary,C-Array,D-Tuple;
+T;Python is not a high level programming language?;False;5;2;
+T;The # symbol can be places to the right of an executable statement ?;True;4;1;
+M;Which of these in not a core datatype?;D;4;A - List,B-Tuple,C-Dictionary,D-Class;
+R;Who invented Python?;Guido van Rossum;3;

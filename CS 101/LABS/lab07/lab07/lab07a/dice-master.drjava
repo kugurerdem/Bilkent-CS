@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20160913-225446">
+  <project autorefresh="false" manifest="" root="" work="">
+    <createjar file="" flags="8"/>
+    <source>
+      <file active="true" name="obj/Die.java" package="obj" timestamp="04-Dec-2018 11:27:20">
+        <select from="586" to="586"/>
+        <scroll column="102" row="0"/>
+      </file>
+      <file name="BasicDice.java" package="" timestamp="04-Dec-2018 10:16:44">
+        <select from="586" to="586"/>
+        <scroll column="102" row="0"/>
+      </file>
+      <file name="TestDie.java" package="" timestamp="04-Dec-2018 10:58:23">
+        <select from="586" to="586"/>
+        <scroll column="102" row="0"/>
+      </file>
+      <file name="TestDiceGame.java" package="" timestamp="04-Dec-2018 11:25:14">
+        <select from="586" to="586"/>
+        <scroll column="102" row="0"/>
+      </file>
+      <file name="obj/Dice.java" package="obj" timestamp="04-Dec-2018 11:26:27">
+        <select from="586" to="586"/>
+        <scroll column="102" row="0"/>
+      </file>
+      <file name="obj/DiceGame.java" package="obj" timestamp="04-Dec-2018 11:27:13">
+        <select from="586" to="586"/>
+        <scroll column="102" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

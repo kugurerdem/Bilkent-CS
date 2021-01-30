@@ -1,0 +1,130 @@
+/*
+ * BigNum class
+ * @author Uður Erdem Seyfi 
+ * @version 24.12.2018
+ */
+
+public class BigNum{
+    
+    // constants
+    final static int size = 4;
+    final static int base = 10;
+    
+    // properties
+    int[] data;
+    
+    /*
+     * Default constructor
+     */
+    public BigNum(){
+        
+        data = new int[size];
+        for(int el : data){
+            el = 0;
+        }
+    }
+    
+    /*
+     * Constructor - 2
+     * @param string - String number
+     */
+    public BigNum(String num){
+        
+        this();
+        for(int i = 0; i < num.length() ; i++){
+            data[num.length()  - 1 - i] = Character.getNumericValue( num.charAt(i) ); 
+        }
+    }
+    
+    /*
+     * Constructor - 3
+     * @param num - BigNum
+     */
+    public BigNum(BigNum num){
+        data = num.data;
+    }
+    
+    /*
+     * @param left - shifts left if true, right if false
+     */
+    public void shift(boolean left){
+        int[] new_arr = new int[size];
+        
+        if(left){
+            
+            for(int i = new_arr.length - 1; i > 0; i--){
+                new_arr[i] = data[i-1];
+            }
+            
+            new_arr[0] = 0;
+            
+        } else{
+            
+            for(int i = 0; i < new_arr.length - 1; i++){
+                new_arr[i] = data[i+1];
+            }
+            
+            new_arr[new_arr.length - 1] = 0;
+        }
+        
+        data = new_arr;
+    }
+    
+    /*
+     * @param BigNum - other number to be added
+     */
+    public int add(BigNum other){
+        int index = 0;
+        
+        while(index < size){
+            data[index] = data[index] + other.data[index];
+            index++;
+        }
+        
+        int onHand = 0;
+        for(int i = 0; i < data.length; i++){
+            data[i] = onHand + data[i];
+            onHand = data[i] / base;
+            data[i] = data[i] % base;
+        }
+        
+        return onHand;     
+    }
+    
+    /*
+     * @param BigNum - the number to be compared
+     */
+    
+    public boolean isLessThan(BigNum other){
+        boolean lessThan = false;
+        int index = 0;
+        
+        while(!lessThan && index < size){
+            if( other.data[index] > data[index]){
+                lessThan = true;
+            }
+            
+            index = index + 1;
+        }
+        
+        return lessThan;
+    }
+    
+    
+    /*
+     * String information
+     */
+    public String toString(){
+        String str;
+        
+        str = "";
+        for(int i = 0; i < data.length; i++){
+            str =  data[i] + str;
+        }
+        
+        return str;
+    }
+    
+    
+    
+}

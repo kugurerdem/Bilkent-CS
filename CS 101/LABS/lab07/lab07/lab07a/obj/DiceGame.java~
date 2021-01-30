@@ -1,0 +1,29 @@
+package obj;
+
+/*
+ * DiceGame
+ * @author Uður Erdem Seyfi
+ * @version 04.12.2018
+ */
+
+public class DiceGame{
+    // properties
+    Dice dice = new Dice();
+    
+    /*
+     * Function that roll dice until it gets 12
+     * @return count of the dice throws
+     */
+    public int play(){
+        int count;
+        
+        count = 0;
+        
+        do{
+            dice.roll();
+            count = count + 1;
+        }while( dice.getDiceTotal() != 12 );
+        
+        return count;
+    }  
+}

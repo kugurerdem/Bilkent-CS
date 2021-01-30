@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+/**
+ * Lab05c: Calculator
+ * Uður Erdem Seyfi
+ * 06.11.2018
+ */ 
+public class Lab05c
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+      
+      // Declaring variables
+      double num; // num in the calculator
+      double givenNum; // num that is given by people
+      String command; // command that user will give
+      
+      // Assigning value to variables
+      num = 0;
+      
+      do{
+          // Current state of calculator
+          System.out.println("-------------");
+          System.out.println("[" + num + "]");
+          System.out.println("-------------");
+          System.out.println("+,-,*,/ value \nClear \nQuit");
+          
+          command = scan.next();
+          
+          // Checking operations
+          if( command.equals("+") ){
+              givenNum = scan.nextDouble();
+              num = num + givenNum; 
+          } else if( command.equals("-") ){
+              givenNum = scan.nextDouble();
+              num = num - givenNum; 
+          } else if( command.equals("*") ){
+              givenNum = scan.nextDouble();
+              num = num * givenNum; 
+          } else if( command.equals("/") ){
+              givenNum = scan.nextDouble();
+              num = num / givenNum; 
+          } else if( command.equals("clear") || command.equals("c") ){
+              num = 0;
+          }
+          
+          
+      }while( !( command.equals("q") || command.equals("quit") ) );
+      
+   }
+
+}

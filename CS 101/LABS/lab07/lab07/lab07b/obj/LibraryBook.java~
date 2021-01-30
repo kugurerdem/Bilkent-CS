@@ -1,0 +1,10 @@
+package obj;
+    
+public class LibraryBook{
+    String name;
+    String title;
+    String dueDate;
+    int timesLoan;
+    
+    
+}

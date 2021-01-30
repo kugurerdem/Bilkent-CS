@@ -1,0 +1,90 @@
+import java.util.Scanner;
+
+/**
+ * Creating Rectangles 
+ * Uður Erdem Seyfi
+ * 06.11.2018
+ */ 
+public class Lab05a
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+      
+      // 1. Declaring variables
+      
+      int width, height, thickness;
+      String column, row, hole, cont;
+      
+      // Do the things
+      do{
+          
+          // Getting inputs from the user
+          System.out.print("Enter width, height & thickness: ");
+          
+          width = scan.nextInt(); 
+          height = scan.nextInt();
+          thickness = scan.nextInt();
+          
+          // Creating our building blocks
+          
+          row = ""; 
+          column = ""; 
+          hole = "";     
+          
+          for(int i = 0; i < width; i++) {
+              row = row + "*";
+          }
+          
+          for(int i = 0; i < thickness; i++){
+              column = column + "*";
+          } 
+          
+          for(int i = 0; i < width - 2*thickness; i++){
+              hole = hole + " ";
+          }
+          
+          // 
+          if( !( width > 0 && height > 0 && thickness > 0) ){
+              
+              // Print an error message
+              
+              System.out.println("All values must be positive");
+              
+          } else{
+              
+              // Draw the rectangle
+              
+              if( !( height - 2 * thickness > 0 ) ){
+                  
+                  for(int i = 0; i < height; i++){
+                      System.out.println(row);
+                  }
+                  
+                  System.out.println("Oops, no hole!");
+                  
+              } else{
+                  
+                  // Draw the top rows
+                  for(int i = 0; i < thickness; i++){
+                      System.out.println(row);
+                  }
+                  
+                  // Draw columns
+                  for(int i = 0; i < height - 2*thickness; i++){
+                      System.out.println(column + hole + column);
+                  }
+                  
+                  // Draw the bottom rows
+                  for(int i = 0; i < thickness; i++){
+                      System.out.println(row);
+                  }
+              } 
+          }
+          
+          System.out.println("If you want to create another pattern write y/Y");
+          cont = scan.next();
+          
+      } while(cont.equals("Y") || cont.equals("y")); 
+   }
+}

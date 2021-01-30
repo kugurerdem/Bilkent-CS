@@ -1,0 +1,42 @@
+/*
+ * Die
+ * @author Uður Erdem Seyfi
+ * @version 04.12.2018
+ */
+
+public class Die{
+    
+    // properties
+    int face;
+    
+    /*
+     * Constructor for Java
+     */
+    public Die(){
+        this.face = 1 + (int) ( Math.random() * 6 ); // Assign random value
+    }
+    
+    /*
+     * A method that rolls the dice
+     */
+    public void roll(){
+        this.face = 1 + (int) ( Math.random() * 6 );
+    }
+    
+    /*
+     * Method that returns the face value
+     * @return face
+     */
+    public int getFaceValue(){
+        return this.face;
+    }
+    
+    /*
+     * Method that returns string information about the die
+     * @return string information
+     */
+    public String toString() { 
+        return "Face: " + this.face;
+    } 
+     
+}

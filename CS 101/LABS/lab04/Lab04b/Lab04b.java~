@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+/**
+ * Lab04b: Processing Data 
+ * @author Uður Erdem Seyfi
+ * @version 30.10.2018
+ */ 
+public class Lab04b
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+
+      // constants
+
+      // variables
+
+      // program code
+      
+      System.out.println( "Start...");
+
+
+      System.out.println( "End.");
+   }
+
+}

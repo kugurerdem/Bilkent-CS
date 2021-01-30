@@ -1,0 +1,3 @@
+ Average of given numbers is: 53.0
+ Maximum number is: 98
+ Minimum number is: 2

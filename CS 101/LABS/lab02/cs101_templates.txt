@@ -1,0 +1,110 @@
+*******************************************************
+*  CS101 - Templates - (2016/10/12)                   *
+*******************************************************
+Simply copy the code you need (from between the "--cut here --" lines) and paste it into your IDE's editor. They should compile & run without any problems. You can edit them and add your own code fragments here as the semester progresses.
+
+
+************************************
+**** simple console application ****
+************************************
+The most basic of "magical incantations" to get you up and running quickly. It includes the code necessary for user input, so you can concentrate on converting your algorithm & memory requirements into Java. Having copied the template into your IDE's editor, simply replace "__program description__", "__your name__" and "__date__" as appropriate, change "XXXX" to the name you want to use for your program, then write your constants, variables and program code in the appropriate sections. 
+
+-------- cut here ------------------------------------
+import java.util.Scanner;
+
+/**
+ * __program description___ 
+ * @author __your name___
+ * @version __date__
+ */ 
+public class XXXX
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+
+      // constants
+
+      // variables
+
+      // program code
+      System.out.println( "Start...");
+
+
+      System.out.println( "End.");
+   }
+
+}
+-------- cut here ------------------------------------
+
+
+************************************
+****      simple Java class     ****
+************************************
+
+-------- cut here ------------------------------------
+/**
+ * A simple Java class!
+ */
+public class XXXX 
+{
+   // properties
+
+   // constructors
+   
+   // methods
+
+}
+-------- cut here ------------------------------------
+
+
+************************************
+****      simple applet         ****
+************************************
+Applets are no longer fashionable, so most browsers won't actually allow this code to work, however you should be able to run it locally using the JDK appletviewer.
+
+-------- cut here ------------------------------------
+import java.awt.Graphics;
+import java.applet.Applet;
+
+/**
+ * An Applet!
+ */
+public class XXXX extends Applet 
+{
+    
+   public void paint( Graphics g)
+   {
+      g.drawString( "Hello...", 50, 50);
+      g.drawRect( 25, 25, 100, 50);
+   }
+    
+}
+-------- cut here ------------------------------------
+
+
+************************************
+****    html page for applet    ****
+************************************
+Included for completeness only. Applets are no longer fashionable, so most browsers won't actually allow this code to work. You can use the JDK appletviewer for testing applets if necessary.
+
+Note: save this as a .html file, not a .java file!
+
+-------- cut here ------------------------------------
+<html>
+<head>
+   <title>My first Applet!</title>
+</head>
+<body>
+   <hr>
+   <p>A Java applet just for you....</p>
+   <applet code=XXXX.class width=200 height=150></applet>
+   <hr>
+   <a href="XXXX.java">The source.</a>
+</body>
+</html>
+-------- cut here ------------------------------------
+
+
+*******************************************************
+*******************************************************
