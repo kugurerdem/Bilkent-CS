@@ -1,0 +1,116 @@
+/*
+  A test program to test the various components of the language. 
+ */
+
+/*
+    This part tests the set operations in the language.
+*/
+
+set set1 = { 1, 2, 7 };                     // set of integers
+set set2 = {1,7,2};                         // set of integers
+set set3 = { "Mesut", "Husnu", "Riza" };    // set of strings
+set set4 = { set1, set2 };                  // set of sets
+set set5 = { true, true, true, false };     // set of booleans
+set set6 = { true, false };
+set stringSet2 = input();                   // storing the input in the stringSet2 variable
+
+
+
+if ( set1 == set2 ) {
+    print( "Two sets are equal" );
+}
+
+else {
+    print( "Two sets are not equal" ); 
+}
+    
+
+/*
+Note: the sets are considered equal when they have the same elements. The number of elements do not matter.  
+*/
+
+if ( set5 == set6 ) {
+    print( "Given boolean sets are equal" );
+}   
+
+else {
+    print( "Given boolean sets are not equal" );
+}  
+
+set1.add( 87 );        // adding an element to a set
+set2.remove( 7 );      // removing an element from the set
+
+set set7 = union( set1, set2);
+set set8 = intersection( set1, set2 );
+
+if ( set1 > set2 ) {
+    print( "set1 is a superset of set2" );
+}
+
+if ( set1 < set8 ) {
+    print( "set1 is a subset of set8" );
+}
+
+delete set1;          // to remove all elements from the set and setting it equal to {}(empty set) 
+set2.add(input());    // adding the elements, that user entered, to the set
+
+delete set6;          // set 6 is now equal to empty set
+
+set2 = set2 \ set1;   // set subtraction
+
+/*
+    This part tests the set decision statements and loops in the language.
+*/
+
+int num1 = 3;
+int num2 = 8;
+int num3 = 27;
+int num4 = -72;
+float realNum = 0.99;
+char character = 'y';
+string str = "Mesut";      // string declaration
+
+if ( ( num1 != num2 ) && ( num1 == num3 ) ) {
+    print ("num1 is not equal to num2 and is equal to num3" );
+}
+
+else if ( ( num2 == num4 ) || ( num3 == num4 ) ) {
+    print ("num2 is equal to num4 or num3 is  equal to num4");
+}
+
+else {
+	if ( ( num3 > 0 ) && (! (num3 >= 8)) ) {
+		print("num3 is greater than num0 and num3 is not greater than or equal to 8");
+	}    
+}
+
+// incrementing num2 by i multiple times using a for loop
+for ( int i = 0; i < num3; i = i + 3 ) {
+    num2 = num2 + i;
+} 
+
+// incrementing num2 until it reaches 1000 using while loop
+while ( num2 < 1000 ) {
+    num2 = num2 + 10;
+}
+
+// incrementing num4 until it is zero using do-while loop
+do {
+	num4 = num4 + 1;
+} while ( num4 < 0 );
+
+
+/*
+    This part tests the function definition and implementation in the language.
+*/           
+
+int sum( int a, int b ) {
+    return a + b;
+}
+
+int number1 = 7;
+int number2 = 12;
+
+int number3 = sum( number1, number2 );   // number3 is 19 after this method call
+
+            

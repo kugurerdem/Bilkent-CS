@@ -1,0 +1,68 @@
+<html>
+<head> 
+
+</head>
+
+<body>
+
+<script>
+
+	document.write( "You can open the console (by F12) to see the outputs of the code.");
+	// 1. What are the types of loop control variables?
+	console.log("-1-");
+
+	// Variable of type Integer
+	for(let i = 0; i < 10; i++){
+	  console.log(i);
+	}
+
+	// Variable of type Boolean
+	let n = 3;
+	for(let i = n + 1, divisibleByFive = false; !divisibleByFive; i++){
+	  if( i % 5 == 0){
+		divisibleByFive = true;
+		console.log("The first number that is divisible by 5 after " + n + " is :" + i);
+	  }
+	}
+
+	// Variable of type String
+	for(let i = "a"; i != "aaaa"; i = i + "a"){
+	  console.log(i);
+	}
+
+	// 2. What are the scopes of loop control variables?
+	console.log("-2-");
+
+	let x = 1;
+	for(x = 3; x < 10; x++){
+	  // nothing
+	}
+	console.log( x); // 10
+
+	y = 1;
+	for(let x = 3; x < 10; x++){
+	  // var z = 2;
+	  for(z = 0; z < 5; z++){
+		// nothing
+	  }
+	}
+	console.log( y); // 1
+	console.log( z); // 5
+
+	// 3. Is it legal for the loop control variable or loop parameters to be changed in the loop, and if so, does the change affect loop control?
+	console.log("-3-");
+
+	n = 10;
+	for(var i = 0; i < n; i++){
+	  i = i + 1;
+	  n = n + 0.5;
+	  console.log(i);
+	}
+
+	// 4. Are the loop parameters evaluated only once, or once for every iteration?
+
+</script>
+
+</body>
+
+</html>
