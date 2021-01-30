@@ -1,0 +1,25 @@
+
+public abstract class XShape extends Shape{
+    
+    boolean selected;
+    
+    public XShape(){
+        selected = false;
+    }
+    
+    public void setSelected(boolean s){
+        selected = s;
+    }
+    
+    public boolean getSelected(){
+        return selected;
+    }
+    
+    public boolean contains(){
+        return false;
+    }
+    
+    public String toString(){
+        return selected ? " this object is selected " : " this object is not selected ";
+    }
+}

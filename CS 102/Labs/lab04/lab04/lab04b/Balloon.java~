@@ -1,0 +1,12 @@
+import shapes.*;
+
+public class Balloon extend Circle implements Drawable{
+    int radius;
+    
+    public Balloon(){
+        radius = 25;
+        
+        this.super(25,5,5);
+    }
+    
+}

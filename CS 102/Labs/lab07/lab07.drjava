@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20160913-225446">
+  <project autorefresh="false" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="ListTester.java" package="" timestamp="06-May-2019 11:11:15">
+        <select from="5164" to="5164"/>
+        <scroll column="1961" row="0"/>
+      </file>
+      <file name="cs102/ds/List.java" package="cs102.ds" timestamp="06-May-2019 11:12:04">
+        <select from="5164" to="5164"/>
+        <scroll column="1961" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

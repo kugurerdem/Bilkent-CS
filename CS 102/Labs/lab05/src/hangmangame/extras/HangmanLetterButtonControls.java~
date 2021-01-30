@@ -1,0 +1,32 @@
+package hangmangame.extras;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import cs102.hangman.*;
+
+public class HangmanLetterButtonControls extends LetterButtonControls implements IHangmanView{
+    
+    // properties
+    HangmanModel hangman;
+    
+    /*
+     * Default constructor
+     */
+    public HangmanLetterButtonControls(HangmanModel h){
+        super( h.getAllLetters());
+        this.hangman = h;
+    }
+    
+    public void updateView(Hangman h){
+        String usedLetters = h.getUsedLetters();
+        
+        if( h.isGameOver() ){
+            setEnabledAll( false);
+        } else{
+            setEnabledAll( true);
+            setDisabled( usedLetters);
+        }
+    }
+    
+}

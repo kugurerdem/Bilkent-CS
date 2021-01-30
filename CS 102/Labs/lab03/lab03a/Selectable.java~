@@ -1,0 +1,6 @@
+
+public interface Selectable{    
+    boolean getSelected();
+    void setSelected( boolean s);
+    boolean contains( int x, int y);
+}

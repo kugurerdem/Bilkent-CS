@@ -1,0 +1,35 @@
+/*
+ * Iterator class for the bag 
+ * 
+ */
+class IntBagIterator implements Iterator{
+    // properties
+    IntBag aBag;
+    int index;
+    
+    /*
+     * Default constructor
+     * @param - bag
+     */
+    public IntBagIterator(IntBag bag){
+        aBag = bag;
+    }
+    
+    /*
+     * Method that returns the next integer
+     * @return next integer
+     */
+    public Object next(){
+        Integer integer = new Integer(aBag.get(index));
+        index++;
+        return integer;
+    }
+    
+    /*
+     * Method that states if there is a next element
+     * @return true if there is a next element, otherwie false
+     */
+    public boolean hasNext(){
+        return index < aBag.size();
+    }
+}

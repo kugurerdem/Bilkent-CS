@@ -1,0 +1,17 @@
+/*
+ * Lab01c
+ * @author Uður Erdem Seyfi
+ * @version 18.02.2019
+ */
+
+public class Lab01c{
+    
+    /*
+     * main method which executes the program
+     * @param args - arguments
+     */
+    public static void main(String[] args){
+        
+        
+    } 
+}

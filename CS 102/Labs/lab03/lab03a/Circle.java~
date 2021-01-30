@@ -1,0 +1,28 @@
+public class Circle extends XShape implements Selectable{
+    int radius;
+    
+    public Circle(int r){
+        super();
+        radius = r;
+    }
+    
+    public double getArea(){
+        return Math.PI * Math.pow(radius, 2);
+    }
+    
+    public void setSelected(boolean s){
+        selected = s;
+    }
+    
+    public boolean getSelected(){
+        return selected;
+    }
+    
+    public boolean contains(int a, int b){
+        if( Math.sqrt( Math.pow((x - a), 2) + Math.pow((y - b), 2) ) <=radius){
+            return true;
+        }
+        
+        return false;
+    }
+}

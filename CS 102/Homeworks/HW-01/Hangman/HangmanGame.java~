@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+/**
+ * @author Ege, Alp, Baykam, Zübeyir, Uğur, Agil
+ * @version 11/02/2019
+ * 
+ */
+
+public class HangmanGame {
+
+   public static void main(String[] args) {
+   
+      Scanner scan = new Scanner(System.in);
+      
+      // Constants
+      
+      // Variables
+      String line;
+      char letter;
+      Hangman hangman;
+      
+      // Code
+      hangman = new Hangman();
+      
+      System.out.println("Welcome to Hangman!");
+
+      do {
+      
+         System.out.println(hangman.getKnownSoFar());
+         System.out.println("Used letters: " + hangman.getUsedLetters());
+         System.out.println("You have " + (hangman.getMaxAllowedIncorrectTries() - hangman.getNumOfIncorrectTries())
+                             + " tries remaining");
+         System.out.print("Please enter a letter to try: ");
+         line = scan.nextLine();
+         if( line.length() > 0){
+             letter = line.charAt(0);
+             int found = hangman.tryThis(letter);
+             if()
+             System.out.println();
+         } 
+      } while(!hangman.isGameOver());
+      
+      if (hangman.hasLost()) {
+          System.out.println("You Lose!");
+      } else {
+         System.out.println("You Win!");
+         System.out.println("The word was: " + hangman.getKnownSoFar());
+      }
+   }
+}

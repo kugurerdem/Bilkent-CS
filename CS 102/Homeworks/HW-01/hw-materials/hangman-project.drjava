@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20160913-225446">
+  <project autorefresh="false" main="" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="CS102 Hangman-Sec01-piece1-another.java" package="" timestamp="11-Feb-2019 18:41:25">
+        <select from="0" to="0"/>
+        <scroll column="330" row="0"/>
+      </file>
+      <file name="CS102 Hangman-Sec01-piece1.java" package="" timestamp="11-Feb-2019 18:39:57">
+        <select from="0" to="0"/>
+        <scroll column="330" row="0"/>
+      </file>
+      <file name="CS102 Hangman-Sec01-piece2.java" package="" timestamp="11-Feb-2019 18:00:52">
+        <select from="0" to="0"/>
+        <scroll column="330" row="0"/>
+      </file>
+      <file name="CS102-Hangman-Sec01-piece3-another.java" package="" timestamp="11-Feb-2019 18:07:28">
+        <select from="0" to="0"/>
+        <scroll column="330" row="0"/>
+      </file>
+      <file name="CS102-Hangman-Sec01-piece3.java" package="" timestamp="11-Feb-2019 18:03:21">
+        <select from="0" to="0"/>
+        <scroll column="330" row="0"/>
+      </file>
+      <file name="CS102-Hangman-Sec01-piece4-another.java" package="" timestamp="11-Feb-2019 18:52:17">
+        <select from="0" to="0"/>
+        <scroll column="330" row="0"/>
+      </file>
+      <file name="CS102-Hangman-Sec01-piece4.java" package="hangman" timestamp="11-Feb-2019 18:05:11">
+        <select from="0" to="0"/>
+        <scroll column="330" row="0"/>
+      </file>
+      <file name="CS102-Hangman-Sec01-piece5.java" package="" timestamp="11-Feb-2019 18:06:40">
+        <select from="0" to="0"/>
+        <scroll column="330" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

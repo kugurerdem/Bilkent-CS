@@ -1,0 +1,24 @@
+
+public class Rectangle extends XShape implements Selectable{
+    int width;
+    int height;
+    
+    public Rectangle(int w, int h){
+        super();
+        width = w;
+        height = h;
+        selected = false;
+    }
+    
+    public double getArea(){
+        return width * height;
+    }
+    
+    public boolean contains(int a, int b){
+        if( x <= a && a <= x + width && y <= b && b <= y + height){
+            return true;
+        }
+        
+        return false;
+    }
+}

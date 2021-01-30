@@ -1,0 +1,10 @@
+
+public class Square extends Rectangle{
+    int side;
+    boolean selected;
+    
+    public Square(int s){
+        super(s, s);
+    }
+    
+}

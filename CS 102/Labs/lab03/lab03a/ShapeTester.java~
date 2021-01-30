@@ -1,0 +1,96 @@
+import java.util.Scanner;
+
+public class ShapeTester{
+    public static void main(String[] args){
+        // declaring variables
+        Scanner scan;
+        ShapeContainer container;
+            
+        //assignin values to variables
+        scan = new Scanner(System.in);
+        container = new ShapeContainer();
+        
+        boolean quit = false;
+        do{
+            int command;
+            System.out.println(" 1. Add a shape ");
+            System.out.println(" 2. Compute and get total area ");
+            System.out.println(" 3. Information for shapes ");
+            System.out.println(" 4. Find the shape that contains given x and y, then select it ");
+            System.out.println(" 5. Remove all selected shapes from the list ");
+            
+            command = scan.nextInt();
+            
+            if( command == 1 ){
+                int c;
+                
+                System.out.println(" 1. Add rectangle ");
+                System.out.println(" 2. Add square ");
+                System.out.println(" 3. Add circle ");
+                System.out.println(" any other number to go back ");
+                
+                c = scan.nextInt();
+                
+                if( c == 1 || c == 2 || c == 3){
+                    System.out.println(" Enter x positon : ");
+                    int x = scan.nextInt();
+                    
+                    System.out.println(" Enter y positon : ");
+                    int y = scan.nextInt();
+                    
+                    if( c == 1){
+                        System.out.println(" Enter width : ");
+                        int width = scan.nextInt();
+                        System.out.println(" Enter height : ");
+                        int height = scan.nextInt();
+                        
+                        Shape s = new Rectangle(width, height);
+                        s.setLocations(x, y);
+                        
+                        container.add(s);
+                    } else if( c == 2){
+                        System.out.println(" Enter side length: ");
+                        int side = scan.nextInt();
+                        
+                        Shape s = new Square(side);
+                        s.setLocations(x, y);
+                        container.add(s);
+                    } else if( c == 3){
+                        System.out.println(" Enter radius: ");
+                        int r = scan.nextInt();
+                        
+                        Shape s = new Circle(r);
+                        s.setLocations(x, y);
+                        container.add(s);
+                    }
+                }
+            } else if( command == 2){
+                System.out.println( " total area is : " + container.getArea() );
+            } else if( command == 3){
+                System.out.println( container );
+            } else if( command == 4){
+                System.out.println(" Enter x positon : ");
+                int x = scan.nextInt();
+                
+                System.out.println(" Enter y positon : ");
+                int y = scan.nextInt();
+                
+                Shape s = container.findShapeContains(x, y);
+                if( s == null ){
+                    System.out.println(" There is no such shape ");
+                } else{
+                    ((Selectable) s).setSelected( !((Selectable) s).getSelected() );
+                    System.out.println(" The shape's selected state is toggled ");
+                }
+            } else if( command == 5){
+                container.remove();
+            } else{
+                quit = true;
+                System.out.println(" Invalid command ");
+            }
+        
+        }while(!quit);
+        
+    }
+}
+                      

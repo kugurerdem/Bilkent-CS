@@ -1,0 +1,101 @@
+package cardgame;
+
+import java.util.ArrayList;
+
+// Cardgame
+// author:
+// date:
+public class CardGame
+{
+    // properties
+    Cards             fullPack;
+    ArrayList<Player> players;
+    ScoreCard         scoreCard;
+    Cards[]           cardsOnTable;
+    int               roundNo;
+    int               turnOfPlayer;
+    
+    // constructors
+    public CardGame( Player p1, Player p2, Player p3, Player p4)
+    {
+        // players joined the game
+        players.add(p1);
+        players.add(p2);
+        players.add(p3);
+        players.add(p4);
+        
+        // created a new fullPack and then shuffled it
+        fullPack = new Cards(true);
+        fullPack.shuffle();
+        
+        // distribute cards to the players
+        for(int i = 0; i < 52; i++){
+            players.get( i % players.size() ).add( fullPack.getTopCard() );
+        }
+        
+        // 
+        roundNo = 0;
+        scoreCard = new ScoreCard( players.size() );
+        cardsOnTable = new Cards[ players.size() ];
+        
+        
+        
+    }
+    
+    // methods
+    public boolean playTurn( Player p, Card c)
+    {
+        // Todo
+        return false;
+    }
+    
+    public boolean isTurnOf( Player p)
+    {
+        // ToDo
+        return false;
+    }
+    
+    public boolean isGameOver()
+    {
+        // ToDo
+        return false;
+    }
+    
+    /*
+     * @param 
+     */
+    public int getScore( int playerNumber)
+    {
+        return players.get(playerNumber);
+    }
+    
+    public String getName( int playerNumber)
+    {
+        // ToDo
+        return "Not yet implemented";
+    }
+    
+    public int getRoundNo()
+    {
+        // ToDo
+        return -1;
+    }
+    
+    public int getTurnOfPlayerNo()
+    {
+        // ToDo
+        return -1;
+    }
+    
+    public Player[] getWinners()
+    {
+        // ToDo
+        return null;
+    }
+    
+    public String showScoreCard()
+    {
+        return scoreCard.toString();
+    }
+    
+}

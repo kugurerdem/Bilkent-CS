@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20160913-225446">
+  <project autorefresh="false" build="classes/" main="MyCardGame" root="src/" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="MyCardGame.java" package="" timestamp="06-Mar-2019 22:36:20">
+        <select from="1260" to="1260"/>
+        <scroll column="689" row="0"/>
+      </file>
+      <file name="CardGameTest.java" package="" timestamp="06-Mar-2019 22:52:46">
+        <select from="1260" to="1260"/>
+        <scroll column="689" row="0"/>
+      </file>
+      <file name="cardgame/Cards.java" package="cardgame" timestamp="04-Mar-2019 10:40:22">
+        <select from="1260" to="1260"/>
+        <scroll column="689" row="0"/>
+      </file>
+      <file name="cardgame/Card.java" package="cardgame" timestamp="04-Mar-2019 10:51:20">
+        <select from="1260" to="1260"/>
+        <scroll column="689" row="0"/>
+      </file>
+      <file name="cardgame/Player.java" package="cardgame" timestamp="06-Mar-2019 21:41:37">
+        <select from="1260" to="1260"/>
+        <scroll column="689" row="0"/>
+      </file>
+      <file name="cardgame/ScoreCard.java" package="cardgame" timestamp="06-Mar-2019 22:06:26">
+        <select from="1260" to="1260"/>
+        <scroll column="689" row="0"/>
+      </file>
+      <file name="cardgame/CardGame.java" package="cardgame" timestamp="06-Mar-2019 22:31:09">
+        <select from="1260" to="1260"/>
+        <scroll column="689" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

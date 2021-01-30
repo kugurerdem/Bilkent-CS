@@ -1,0 +1,91 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+/*
+ * Pot Luck game
+ * @author - Uður Erdem Seyfi
+ * @version - 
+ */
+public class Lab04a extends JFrame{
+    // constant properties
+    final int WIDTH, HEIGHT; // button numbers
+
+    // properties
+    JPanel panel; // panel for buttons
+    JButton[][] buttons; // list of buttons
+    JButton hidden; // random button selected from the list of buttons
+    JLabel label; // text info about the player's situation
+    
+    int guess; // guess number of the player
+    boolean found; // is true if the player found the treasure, otherwise false.
+    
+    /*
+     * Default constructor
+     * @param title - title of the frame
+     */
+    public Lab04a(String title){
+        super(title);
+        
+        // setting number of buttons
+        WIDTH = 8;
+        HEIGHT = 8;
+        
+        // Initial properties
+        guess = 0;
+        found = false;
+        
+        // assigning values to variables
+        setLayout( new BorderLayout() );
+        panel = new JPanel( new GridLayout(WIDTH, HEIGHT) );
+        label = new JLabel(" guess number : " + guess , SwingConstants.CENTER);
+        
+        // creating buttons
+        buttons = new JButton[WIDTH][HEIGHT];
+        for(int i = 0; i < buttons.length; i++){
+            for(int j = 0; j < buttons[i].length; j++){
+                buttons[i][j] = new JButton("Button : " + (i+1) + " " + (j+1) );
+                buttons[i][j].addActionListener( new MyListener() );
+                panel.add(buttons[i][j]);
+            }
+        }
+        
+        // selecting a random button
+        hidden = buttons[(int)(Math.random() * WIDTH)][(int)(Math.random() * HEIGHT)];
+        
+        // adding components to frame
+        add(label, BorderLayout.NORTH);
+        add(panel, BorderLayout.CENTER);
+        
+        pack();
+        setVisible(true);
+    }
+    
+    /*
+     * Inner class for ActionListening 
+     */
+    class MyListener implements ActionListener{
+         public void actionPerformed(ActionEvent e){
+             
+             if( e.getSource() == hidden ){
+                 label.setText(" found at " + hidden.getText() );
+                 found = true;
+             } else if(!found){
+                 // If the button is not already pressed, then increase the guess number
+                 if( !((JButton) e.getSource()).getText().equals(" X ") )
+                     label.setText(" guess number : " + (++guess) );  
+                 // Set the false button's text to X
+                 ((JButton) e.getSource()).setText(" X ");
+             }
+         }
+    }
+    
+    /*
+     * method that runs the code
+     * @param args - arguments
+     */
+    public static void main(String args[]){
+        Lab04a lab04a = new Lab04a("Pot Luck");
+    }
+    
+}

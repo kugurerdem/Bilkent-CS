@@ -1,0 +1,99 @@
+package hangmangame.extras;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import cs102.hangman.*;
+
+/*
+ * Panel for stickman 
+ * @author Uður Erdem Seyfi
+ * @version 13.04.2019
+ */
+public class GallowsHangmanView extends JPanel implements IHangmanView{
+    // properties
+    HangmanModel hangman;
+    
+    /*
+     * Default constructor
+     * @param HangmanModel 
+     */
+    public GallowsHangmanView(HangmanModel h){
+        this.hangman = h;
+        setPreferredSize( new Dimension( 200, 200) );
+        
+    }
+    
+    /*
+     * Method that updates the view of panel
+     * @param hangman object
+     */
+    @Override
+    public void updateView(Hangman h){
+        repaint();
+    }
+    
+    /*
+     * Painting the stickman
+     * @param graphics object
+     */
+    @Override
+    public void paintComponent( Graphics g){     
+        // draw background
+        g.setColor(Color.BLUE);
+        g.fillRect(0, 0, this.getWidth(), this.getHeight());
+        
+        g.setColor(Color.BLACK);
+        
+        // draw hang
+        g.fillRect(20, 190, 100, 20);
+        g.fillRect(40, 40, 20, 150);
+        g.fillRect(40, 40, 100, 20);
+        g.fillRect(130, 60, 10, 20);
+        
+        // draw hangman
+        int state = this.hangman.getNumOfIncorrectTries();
+        int maximumTry = this.hangman.getMaxAllowedIncorrectTries();
+        
+        // HEAD
+        if( state >= (maximumTry / 6) ){
+            g.fillOval(115, 70, 40, 40);
+        }
+        
+        // BODY
+        if( state >= (2 * maximumTry / 6) ){
+            g.drawLine(135, 110, 135, 150);
+        }
+        
+        // RIGHT ARM
+        if( state >= (3 * maximumTry / 6) ){
+            g.drawLine(135, 115, 155, 150);
+        }
+        
+        // LEFT ARM
+        if( state >= (4 * maximumTry / 6) ){
+            g.drawLine(135, 115, 115, 150);
+        }
+        
+        // RIGHT LEG
+        if( state >= (5 * maximumTry / 6)){
+            g.drawLine(135, 150, 155, 185);
+        }
+        
+        // LEFT LEG
+        if( state >= maximumTry){
+            g.drawLine(135, 150, 115, 185);
+        }
+        
+        // Game over
+        g.setColor(Color.RED);
+        if( this.hangman.isGameOver() ){
+            if( this.hangman.hasLost() ){
+                g.drawString("YOU LOST", 200, 200 );
+            } else{
+                g.drawString("YOU WON", 200, 200 );
+            }
+        }
+        
+    }
+}

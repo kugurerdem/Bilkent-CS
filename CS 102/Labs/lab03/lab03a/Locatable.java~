@@ -1,0 +1,7 @@
+public interface Locatable{
+    public int getX();
+    public int getY();
+    
+    public void setLocations(int a, int b);
+    
+}

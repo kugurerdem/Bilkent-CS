@@ -1,0 +1,40 @@
+public int tryThis( char letter )
+{
+    int times;
+    times = 0;
+    
+    // is it already used
+    for( int i = 0; i < usedLetters.length(); i ++)
+    {
+        if ( letter == usedLetters.charAt(i))
+            return -2;
+    }
+    
+    // is it in allLetters
+    for( int i = 0; i < allLetters.length(); i ++)
+    {
+        if ( letter == allLetters.charAt(i))
+            return -1;
+    }
+    
+    usedLetters = usedLetters + letter;
+    
+    // counting
+    for( int i = 0; i < secretWord.length(); i ++)
+    {
+        if ( letter == secretWord.charAt(i))
+        {
+            knownSoFar = knownSoFar.substring(0,i) + letter + knownSoFar.substring( i+1,knownSoFar.length() )
+                times++;
+        }
+    }
+    
+    if ( times == 0) 
+        numberOfIncorrectTries ++;
+    
+    if ( isGameOver() )
+        return -3;
+    
+    return times;
+    
+}

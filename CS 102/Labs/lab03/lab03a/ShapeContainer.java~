@@ -1,0 +1,61 @@
+import java.util.ArrayList;
+
+public class ShapeContainer{
+    ArrayList<Shape> shapes;
+    
+    public ShapeContainer(){
+        shapes = new ArrayList<Shape>();
+    }
+    
+    public void add(Shape s){
+        shapes.add(s);
+    }
+    
+    public double getArea(){
+        // computer the total area
+        double total = 0;
+        for(int i = 0; i < shapes.size(); i++){
+            total = total + shapes.get(i).getArea();
+        }
+        
+        //return it
+        return total;
+    }
+    
+    public Shape findShapeContains(int x, int y){
+        for(int i = 0; i < shapes.size(); i++){
+            Shape shape = shapes.get(i);
+            if( ((Selectable) shape).contains(x,y) ){
+                return shape;
+            }
+        }
+        
+        return null;
+    }
+    
+    public void remove(){
+        int index = 0;
+        
+        while( index < shapes.size() ){
+            Shape shape = shapes.get(index);
+            if( ((Selectable) shape).getSelected() ){
+                shapes.remove(index);
+            } else{
+                index++;
+            }
+        }
+    }
+    
+    public String toString(){
+        String str = "";
+        
+        for(int i = 0; i < shapes.size(); i++){
+            str = str + "\n shape " + i + "\n area : " + shapes.get(i).getArea() + "\n";
+            str = str + shapes.get(i);
+        }
+        
+        str = str + "\n\n total area is " + this.getArea() + "\n";
+        
+        return str;
+    }
+}

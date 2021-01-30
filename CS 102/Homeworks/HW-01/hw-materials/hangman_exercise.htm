@@ -1,0 +1,120 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Hangman</title>
+</head>
+
+<body>
+
+<h1>Hangman - <span style="background-color: #FFFF00">Homework</span></h1>
+<hr>
+<p>&nbsp;</p>
+<h2>Description</h2>
+<p>In the game of Hangman the player must find a word chosen secretly by the 
+program. The player can try one letter at a time and the program says how many 
+times <span lang="en-us">and where </span>the letter appears in the secret word. 
+If the player tries more than a certain number of <span lang="en-us">incorrect
+</span>letters<span lang="en-us"> (i.e. letters which do not appear in the 
+secret word)</span>, they lose the game and the program tells them the secret 
+word, otherwise they continue until they uncover the complete word. </p>
+<p>Usually, players are able to see the partially formed word made by the 
+letters so far correctly guessed, any unknown letters being left blank. They may 
+also be able to see the set of all letters that might be in the word (with those 
+already used possibly being removed), as well as the number of incorrect tries 
+made so far (this is often shown graphically, by the number of visible body 
+parts of a cartoon character <span lang="en-us">which </span>is hung when 
+complete<span lang="en-us"> -hence the name of the game!)</span></p>
+<hr>
+<p>&nbsp;</p>
+<h2>Design</h2>
+<h3>class Hangman</h3>
+<ul>
+  <li>constructors
+  <ul>
+    <li>+ Hangman()&nbsp; <br>
+    // default max 6 incorrect tries, English alphabet, <br>
+    // chooses secretWord from fixed list. </li>
+  </ul>
+  </li>
+  <li>properties
+  <ul>
+    <li>secretWord : StringBuffer </li>
+    <li>allLetters : StringBuffer </li>
+    <li>usedletters : StringBuffer </li>
+    <li>numberOfIncorrectTries : int </li>
+    <li>maxAllowedIncorrectTries : int </li>
+    <li>knownSoFar : StringBuffer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // secretWord but with 
+    chars not yet found blanked out </li>
+  </ul>
+  </li>
+  <li>methods
+  <ul>
+    <li>+ getAllLetters() : String </li>
+    <li>+ getUsedLetters() : String </li>
+    <li>+ getNumOfIncorrectTries() : int </li>
+    <li>+ getMaxAllowedIncorrectTries : int </li>
+    <li>+ getKnownSoFar() : String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // returns partial word 
+    formed with known letters only </li>
+    <li>+ tryThis( letter) : int&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // returns number 
+    of occurrences of letter in secretWord </li>
+    <li>+ isGameOver() : boolean </li>
+    <li>+ hasLost() : boolean </li>
+    <li>- chooseSecretWord()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // initially use fixed 
+    list, called from constructor </li>
+  </ul>
+  </li>
+</ul>
+<hr color="#000000" width="50%">
+<h3>Additional Notes:</h3>
+<h4>constructor:</h4>
+<p>set all letters to English alphbet, set max allowed incorrect tries to 6, no 
+of incorrect tries to 0, used letters to empty set, secret word to result of 
+calling choose secret word method, knowsofar to StringBuffer of same length as 
+secret word, but all characters are stars ('*').</p>
+<h4>tryThis( letter):</h4>
+<p>returns number of times the letter occurs in the secret word. Adds letter to 
+used letters. Updates known so far to show the letter at each position it exists 
+in secret word. If the letter is not in secret word then increment number of 
+incorrect tries. Method should return error values to indicate if the letter is 
+not valid (-1), if the letter was already used (-2), and indicate if game over 
+(-3).</p>
+<h4>chooseSecretWord:</h4>
+<p>returns a word chosen at random from a fixed array of words (defined in 
+program code.) Also write another version of the method that reads the set of 
+words from a text file and selects one from that.</p>
+<h4>main:</h4>
+<p>play the game, by creating an instance of Hangman class and allowing the user 
+to interact with it (in text mode using the keyboard only.)&nbsp; The program 
+must repeatedly get letters from the user and try them...</p>
+<hr>
+<p>&nbsp;</p>
+<h2>Tasks</h2>
+<p>The following division of work has been decided upon and allocated to 
+specific groups during class:</p>
+<ol>
+  <li>main method - plays the game by creating instance of Hangman class &amp; 
+  calling its methods.</li>
+  <li>constructor for Hangman class</li>
+  <li>tryThis method</li>
+  <li>chooseSecretWord method</li>
+  <li>hangman class (but with the bodies of the constructor, chooseSecretWord, &amp; 
+  tryThis methods being empty.)</li>
+</ol>
+<p>Please email your Java code as an attachment to
+your instructor<br>
+24 hours before your next class, with subject line &quot;CS102 - Hangman - SecNo - pieceNo&quot;.</p>
+<p>For example, if Section01 has their next class on Wednesday, they so should email 
+the code on Tuesday,<br>
+with subject &quot;CS102 Hangman - Sec01 - piece1&quot; for the main method, &quot;CS102 
+- Hangman - Sec01 - 
+piece2&quot; for the constructor, etc.</p>
+<p>Please also bring your code to class (on USB memory device).</p>
+<hr><hr>
+
+</body>
+
+</html>

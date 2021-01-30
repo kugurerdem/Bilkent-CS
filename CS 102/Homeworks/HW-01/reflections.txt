@@ -1,0 +1,65 @@
+CS102 - 01
+Uður Erdem Seyfi - 21801744
+19.02.2019
+time spent on exercise : 2 hours
+status of the code : working
+
+- First, i decided to look every piece of code so i can figure it out how to merge them. 
+- After i looked all of the pieces, i created a Hangman class with the template given by piece5.
+- I also created HangmanGame class with the code in piece1. I choose piece1 because that was our groups' piece and i knew there
+	was a few mistakes, i wanted to fix these. I added some code to piece1 so it shows when the letter is entered what
+	happens to it (is it in the word? is it valid? is it already used? etc.)
+- I placed the piece2 int the Hangman class that i created. 
+- I looked up piece3 and piece3-another to figure out which one is better.
+- At first piece3 seemed nicer and more easy to read. Each of the pieces had their own disadvantages:
+
+	(1) Piece3-another were checking whether the letter can be usable or not with comparing letter with the allLeters
+		whereas piece3 does not checking it. But although piece3-another were checking a letter is valid or not, it was returning -2 when it is valid. So the method was wrong.
+	(2) Piece3-another were trying to add a letter to StringBuffer for several times in their method which is not possible.
+	(3) Piece3 were trying to return -1 when count is 0 but, it was written that it should return -1 if and only if letter is invalid (if it is not in the allCharacters).
+	(4) Piece3 were not increasing the numberOfIncorrectTries when it did not find the letter whereas piece3-another were doing it.
+	
+
+- After seeing some advantages and disadvantages of both pieces (piece3 and piece3-another) i decided to go with piece3 and fix the problems in it. 
+- I added some code to piece3 and fixed some of the problems of it. I also added comments in the code so it would be more understandable.
+- After i am done with piece3, i decided to choose piece4 rather than piece4-another, because piece4 were dealing with getting a letter from txt file where piece4 does not. 
+It also had more vocabulary in its default method.
+- In piece4 there was a main method which i think they created it to test their own code, i did not copy that part of the code. 
+I also imported the classes that they used in piece4 to my Hangman class.
+- I noticed that piece4 were using Random class instead of the function Math.random(), 
+i searched Random class on the internet and found that its' performance was lower than math.random(). 
+So i decided to change it to math.random()
+- I tried to find the syntax error, so i tried to compile the hangman class.
+
+	(1) There was a problem about variable's names. I fixed that easily with the help of compiler.
+	(2) There was a problem about trying assigning a String value to a StringBuffer variable. 
+		To solve this problem i searched the StringBUffer class in Google and found that it is faster to 
+		use StringBuffer's methods rather than creating a new StringBuffer class for assigning a value to StringBuffer variable. 
+	(3) One of the problems was about the methods that returns String value were trying to return StringBuffer value. 
+		To solve this i used toString() method of StringBuffers'.
+
+- After i am done with Hangman class i started to look for HangmanGame class.
+- I tried to compile HangmanGame class, there was a problem with naming variables, i fixed the problem.
+- There was another problem too; when i found the word, game was not ending. I looked for the gameOver() method in the Hangman class, 
+	there was a statement which says "knownSoFar.equals(secretWord)". 
+	I thought maybe this part is not working because equals method for StringBuffer's does not work in the same way for strings.
+	I searched the internet, i was right. I fixed the problem with using toString() method of StringBuffers'.
+
+- I noticed i did not tested to getting a word from txt file. 
+I created a test.txt file and wrote several words to it. After that i tried 
+"chooseSecretWord(System.getProperty("user.dir") + "\\test.txt");" instead of "chooseSecterWord();" in the constructor of Hangman and it worked.
+
+- I noticed that when you press enter without writing anything to input box it gives IndexOutOfBounds error, i fixed that problem with creating
+	a String line and checking its length before trying to assign a value to letter.
+
+- I added javadoc and normal comments to both of these classes.
+
+
+What i learned from this experience?
+
+- When you are working with a group make sure what you are expecting from other people in the group and what they are expecting from you.
+- Understanding other people's code is as important as writing your own code.  
+- Sometimes solving the bugs in a given program might be more difficult than to write the whole code by scratch. 
+
+
+
