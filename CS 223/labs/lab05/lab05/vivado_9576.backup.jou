@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Dec 22 00:30:02 2019
+# Process ID: 9576
+# Current directory: C:/Users/ugur/Desktop/Bilkent/04 2019 2020 Fall Semester/CS 223/labs/lab05/lab05
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8792 C:\Users\ugur\Desktop\Bilkent\04 2019 2020 Fall Semester\CS 223\labs\lab05\lab05\lab05.xpr
+# Log file: C:/Users/ugur/Desktop/Bilkent/04 2019 2020 Fall Semester/CS 223/labs/lab05/lab05/vivado.log
+# Journal file: C:/Users/ugur/Desktop/Bilkent/04 2019 2020 Fall Semester/CS 223/labs/lab05/lab05\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/ugur/Desktop/Bilkent/04 2019 2020 Fall Semester/CS 223/labs/lab05/lab05/lab05.xpr}
+update_compile_order -fileset sources_1

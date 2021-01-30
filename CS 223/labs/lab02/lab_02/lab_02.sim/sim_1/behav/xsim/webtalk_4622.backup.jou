@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct 20 00:50:27 2019
+# Process ID: 4622
+# Current directory: /home/ugur/Desktop/lab_02/lab_02.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/ugur/Desktop/lab_02/lab_02.sim/sim_1/behav/xsim/xsim.dir/s_full_adder_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/ugur/Desktop/lab_02/lab_02.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/ugur/Desktop/lab_02/lab_02.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/ugur/Desktop/lab_02/lab_02.sim/sim_1/behav/xsim/xsim.dir/s_full_adder_behav/webtalk/xsim_webtalk.tcl -notrace

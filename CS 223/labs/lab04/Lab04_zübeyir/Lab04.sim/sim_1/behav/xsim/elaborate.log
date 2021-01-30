@@ -1,0 +1,17 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 089a9d828d2d44b589144a341eea97b8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot carTest_behav xil_defaultlib.carTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkDivider
+Compiling module xil_defaultlib.sNext
+Compiling module xil_defaultlib.TwoBitRegister
+Compiling module xil_defaultlib.driverFSM
+Compiling module xil_defaultlib.car
+Compiling module xil_defaultlib.carTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot carTest_behav

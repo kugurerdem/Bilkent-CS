@@ -1,0 +1,24 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto db6f1a27463b4c4ab3ade52645403926 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'load' [C:/Users/ugur/Desktop/lab05/lab05.srcs/sources_1/new/modules.sv:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'load' [C:/Users/ugur/Desktop/lab05/lab05.srcs/sources_1/new/modules.sv:95]
+WARNING: [VRFC 10-3823] variable 'tc' might have multiple concurrent drivers [C:/Users/ugur/Desktop/lab05/lab05.srcs/sources_1/new/modules.sv:105]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'tc' [C:/Users/ugur/Desktop/lab05/lab05.srcs/sources_1/new/modules.sv:104]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'tc' [C:/Users/ugur/Desktop/lab05/lab05.srcs/sources_1/new/modules.sv:105]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.master_process
+Compiling module xil_defaultlib.slave_process
+Compiling module xil_defaultlib.SevSeg_4digit
+Compiling module xil_defaultlib.master_slave
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav

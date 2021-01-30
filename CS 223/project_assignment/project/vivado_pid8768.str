@@ -1,0 +1,153 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 8768
+License: Customer
+
+Current time: 	Mon Dec 30 01:50:04 EET 2019
+Time zone: 	Eastern European Time (Asia/Istanbul)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 262 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ugur
+User home directory: C:/Users/ugur
+User working directory: C:/Users/ugur/Desktop/project
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/ugur/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/ugur/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/ugur/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/ugur/Desktop/project/vivado.log
+Vivado journal file location: 	C:/Users/ugur/Desktop/project/vivado.jou
+Engine tmp dir: 	C:/Users/ugur/Desktop/project/.Xil/Vivado-8768-DESKTOP-A8381IE
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 631 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\ugur\Desktop\project\project.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/ugur/Desktop/project/project.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/ugur/Desktop/project/project.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 81 MB (+82204kb) [00:00:12]
+// [Engine Memory]: 707 MB (+589969kb) [00:00:12]
+// [GUI Memory]: 98 MB (+13565kb) [00:00:13]
+// [GUI Memory]: 121 MB (+18965kb) [00:00:14]
+// [Engine Memory]: 778 MB (+37706kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  4321 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 783 MB. GUI used memory: 58 MB. Current time: 12/30/19, 1:50:10 AM EET
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 814.844 ; gain = 177.551 
+// Project name: project; location: C:/Users/ugur/Desktop/project; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM (partA.sv)]", 1); // B (F, cr)
+// PAPropertyPanels.initPanels (partA.sv) elapsed time: 0.2s
+// [Engine Memory]: 832 MB (+15673kb) [00:00:23]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM (partA.sv)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM (partA.sv)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("partA.sv", 368, 124); // ch (w, cr)
+typeControlKey((HResource) null, "partA.sv", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "partA.sv", 'c'); // ch (w, cr)
+// Elapsed time: 15 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partA (partA.sv)]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partA (partA.sv), REG_FILE : fileReg (partA.sv)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partA (partA.sv), REG_FILE : fileReg (partA.sv), MEMORY_0 : register4 (partA.sv)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partA (partA.sv), REG_FILE : fileReg (partA.sv)]", 3); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partA (partA.sv), S7 : SevSeg_4digit (SevSeg_4digit.sv)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partA (partA.sv), S7 : SevSeg_4digit (SevSeg_4digit.sv)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("SevSeg_4digit.sv", 236, 172); // ch (w, cr)
+typeControlKey((HResource) null, "SevSeg_4digit.sv", 'c'); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux4bit_2 (partA.sv)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux4bit_2 (partA.sv)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux4bit_2 (partA.sv)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partA (partA.sv), REG_FILE : fileReg (partA.sv)]", 3); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partA (partA.sv), REG_FILE : fileReg (partA.sv)]", 3); // B (F, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 873 MB. GUI used memory: 60 MB. Current time: 12/30/19, 1:51:16 AM EET
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM (partA.sv)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM (partA.sv), controller : controller (partA.sv)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM (partA.sv), converter : converter (converter.sv)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM (partA.sv), converter : converter (converter.sv)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("converter.sv", 491, 159); // ch (w, cr)
+typeControlKey((HResource) null, "converter.sv", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "converter.sv", 'c'); // ch (w, cr)
+selectCodeEditor("converter.sv", 849, 67); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 11, true); // B (F, cr) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 9); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, constraints.xdc]", 11, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, constraints.xdc]", 11, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("constraints.xdc", 192, 173); // ch (w, cr)
+typeControlKey((HResource) null, "constraints.xdc", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "constraints.xdc", 'c'); // ch (w, cr)
+// Elapsed time: 23 seconds
+typeControlKey((HResource) null, "constraints.xdc", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "constraints.xdc", 'c'); // ch (w, cr)
