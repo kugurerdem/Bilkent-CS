@@ -1,6 +1,6 @@
 # What is this?
 
-This repository is created for the purpose of keeping track of my Computer Science progress in Bilkent University. 
+This repository is created for the purpose of keeping track of my Computer Science progress in Bilkent University. In each folder, there is a readme.md file that I have explained what we covered in that particular courses and what things I have learned.
 
 # Current Standing
 
