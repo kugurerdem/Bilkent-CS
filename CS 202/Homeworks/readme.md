@@ -1,6 +1,6 @@
 # What is this course?
 
-Continuation of CS 201, which is about basic abstract data types and some sorting algorithms that utilize recursion.
+Continuation of the course CS 201, which is about basic abstract data types and some sorting algorithms that utilize recursion.
 
 # What I have learned this course?
 
