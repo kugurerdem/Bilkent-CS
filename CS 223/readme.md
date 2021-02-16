@@ -5,6 +5,13 @@ The course uses SystemVerilog hardware description language throughout the semes
 
 # What I have learned in this course?
 
-* Fundamental blocks of digital design, such as logic gates, flip-flops and latches, registers, busses, multiplexers, ALU, etc.
+* Fundamental blocks of digital design such as:
+  - logic gates, 
+  - flip-flops and latches, 
+  - registers,
+  - busses,
+  - multiplexers,
+  - ALU, 
+  and so on..
 * Karnaugh maps for simplifying logical circuits
 * Implementing digital designs to an FPGA (Basys3) using HDL SystemVerilog
