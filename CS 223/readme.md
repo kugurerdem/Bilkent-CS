@@ -14,4 +14,4 @@ The course uses SystemVerilog hardware description language throughout the semes
   - ALU, 
   and so on..
 * Karnaugh maps for simplifying logical circuits
-* Implementing digital designs to an FPGA (Basys3) using HDL SystemVerilog
+* Implementing digital designs through an FPGA (Basys3) using HDL SystemVerilog
